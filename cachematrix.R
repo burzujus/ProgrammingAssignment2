@@ -3,6 +3,8 @@
 
 ## Write a short comment describing this function
 
+## The inverse matrix is cached in m
+## This function creates a new, separate environment
 makeCacheMatrix <- function(x = matrix()) {
  m <- NULL
   set <- function(y) {
@@ -19,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+## This function returns the inverse of the matrix - m
 cacheSolve <- function(x, ...) {
   m <- x$getsolve()
   if(!is.null(m)) {
